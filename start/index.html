@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/backboard-v15-preview/favicon.svg" />
+    <meta name="description" content="Create your Backboard account or sign in, then choose where to start: Studio, R-CLI or the Unified API." />
+    <title>Get started | Backboard</title>
+    <script type="module" crossorigin src="/backboard-v15-preview/assets/start-BKagNy-l.js"></script>
+    <link rel="modulepreload" crossorigin href="/backboard-v15-preview/assets/main-B0GVSnf8.js">
+    <link rel="stylesheet" crossorigin href="/backboard-v15-preview/assets/main-B_-6jsyQ.css">
+  </head>
+  <body class="onboard">
+    <div class="ob">
+      <section class="ob-pane">
+        <header class="ob-top">
+          <a class="mark" href="/backboard-v15-preview/"><img data-emblem alt="Backboard" width="146" height="18" /></a>
+          <a class="ob-exit" href="/backboard-v15-preview/">Back to site</a>
+        </header>
+
+        <div class="ob-body">
+          <nav class="ob-trail" aria-label="Progress">
+            <button class="ob-back" type="button" data-prev hidden>Back</button>
+            <ol hidden>
+              <li data-dot="signup">Account</li>
+              <li data-dot="path">Path</li>
+              <li data-dot="setup">Set up</li>
+            </ol>
+          </nav>
+
+          <form class="ob-step" data-step="signin" novalidate>
+            <h1>Welcome back</h1>
+            <p class="ob-lede">Sign in to pick up where you left off. Your models and memory are waiting.</p>
+            <a class="ob-oauth" href="https://app.backboard.io/signin"><svg viewBox="0 0 18 18" width="18" height="18" aria-hidden="true"><path fill="#4285F4" d="M17.64 9.2c0-.64-.06-1.25-.16-1.84H9v3.48h4.84a4.14 4.14 0 0 1-1.8 2.72v2.26h2.92c1.7-1.57 2.68-3.88 2.68-6.62z"/><path fill="#34A853" d="M9 18c2.43 0 4.47-.8 5.96-2.18l-2.92-2.26c-.8.54-1.84.86-3.04.86-2.34 0-4.32-1.58-5.03-3.7H.96v2.33A9 9 0 0 0 9 18z"/><path fill="#FBBC05" d="M3.97 10.72A5.4 5.4 0 0 1 3.68 9c0-.6.1-1.18.29-1.72V4.95H.96A9 9 0 0 0 0 9c0 1.45.35 2.83.96 4.05l3.01-2.33z"/><path fill="#EA4335" d="M9 3.58c1.32 0 2.5.45 3.44 1.35l2.58-2.58A9 9 0 0 0 .96 4.95l3.01 2.33C4.68 5.16 6.66 3.58 9 3.58z"/></svg> Continue with Google</a>
+            <div class="ob-or"><span>or</span></div>
+            <div class="ob-field"><label class="ob-label" for="si-email">Email</label><input class="ob-input" id="si-email" type="email" autocomplete="email" required /></div>
+            <div class="ob-field"><div class="ob-label-row"><label class="ob-label" for="si-pass">Password</label><a class="ob-mini" href="https://app.backboard.io/signin">Forgot password?</a></div><input class="ob-input" id="si-pass" type="password" autocomplete="current-password" required /></div>
+            <p class="ob-error" role="alert" hidden>Enter your email and password.</p>
+            <button class="ob-primary" type="submit">Sign in</button>
+            <p class="ob-fine">New to Backboard? <button type="button" class="ob-link" data-go="signup">Create an account</button></p>
+          </form>
+
+          <form class="ob-step" data-step="signup" novalidate hidden>
+            <h1>Create your account</h1>
+            <p class="ob-lede">Free to start, no credit card required. One account for Studio, R-CLI, Nash and the API.</p>
+            <a class="ob-oauth" href="https://app.backboard.io/signup"><svg viewBox="0 0 18 18" width="18" height="18" aria-hidden="true"><path fill="#4285F4" d="M17.64 9.2c0-.64-.06-1.25-.16-1.84H9v3.48h4.84a4.14 4.14 0 0 1-1.8 2.72v2.26h2.92c1.7-1.57 2.68-3.88 2.68-6.62z"/><path fill="#34A853" d="M9 18c2.43 0 4.47-.8 5.96-2.18l-2.92-2.26c-.8.54-1.84.86-3.04.86-2.34 0-4.32-1.58-5.03-3.7H.96v2.33A9 9 0 0 0 9 18z"/><path fill="#FBBC05" d="M3.97 10.72A5.4 5.4 0 0 1 3.68 9c0-.6.1-1.18.29-1.72V4.95H.96A9 9 0 0 0 0 9c0 1.45.35 2.83.96 4.05l3.01-2.33z"/><path fill="#EA4335" d="M9 3.58c1.32 0 2.5.45 3.44 1.35l2.58-2.58A9 9 0 0 0 .96 4.95l3.01 2.33C4.68 5.16 6.66 3.58 9 3.58z"/></svg> Sign up with Google</a>
+            <div class="ob-or"><span>or</span></div>
+            <div class="ob-grid">
+              <div class="ob-field"><label class="ob-label" for="su-first">First name</label><input class="ob-input" id="su-first" autocomplete="given-name" required /></div>
+              <div class="ob-field"><label class="ob-label" for="su-last">Last name</label><input class="ob-input" id="su-last" autocomplete="family-name" required /></div>
+            </div>
+            <div class="ob-field"><label class="ob-label" for="su-email">Work email</label><input class="ob-input" id="su-email" type="email" autocomplete="email" required /></div>
+            <div class="ob-field"><label class="ob-label" for="su-company">Company <span class="opt">optional</span></label><input class="ob-input" id="su-company" autocomplete="organization" /></div>
+            <div class="ob-field"><label class="ob-label" for="su-pass">Password</label><input class="ob-input" id="su-pass" type="password" autocomplete="new-password" minlength="8" required aria-describedby="su-pass-hint" /><p class="ob-hint" id="su-pass-hint">At least 8 characters.</p></div>
+            <p class="ob-error" role="alert" hidden>Fill in every required field. Passwords need at least 8 characters.</p>
+            <button class="ob-primary" type="submit">Create account</button>
+            <p class="ob-fine">By creating an account you agree to the <a href="/backboard-v15-preview/terms/">terms</a> and <a href="/backboard-v15-preview/privacy/">privacy policy</a>.</p>
+            <p class="ob-fine">Already have an account? <button type="button" class="ob-link" data-go="signin">Sign in</button></p>
+          </form>
+
+          <div class="ob-step" data-step="path" hidden>
+            <h1>Where do you want to start, <span data-out="first">there</span>?</h1>
+            <p class="ob-lede">Pick one. The same account works everywhere, so you can add the rest later.</p>
+            <div class="ob-paths" role="radiogroup" aria-label="Starting point">
+              <button type="button" role="radio" aria-checked="false" class="ob-path" data-path="studio">
+                <img src="/backboard-v15-preview/img/studio-app.jpg" alt="" />
+                <span class="ob-path-text"><span class="ob-path-name">Studio</span><span class="ob-path-line">Desktop IDE with the whole stack built in</span></span>
+                <span class="ob-radio" aria-hidden="true"></span>
+              </button>
+              <button type="button" role="radio" aria-checked="false" class="ob-path" data-path="rcli">
+                <img src="/backboard-v15-preview/img/rcli-app.jpg" alt="" />
+                <span class="ob-path-text"><span class="ob-path-name">R-CLI</span><span class="ob-path-line">Open source recursive coding harness. 84.3% on Terminal Bench 2.1</span></span>
+                <span class="ob-radio" aria-hidden="true"></span>
+              </button>
+              <button type="button" role="radio" aria-checked="false" class="ob-path" data-path="api">
+                <img src="/backboard-v15-preview/img/api-app.jpg" alt="" />
+                <span class="ob-path-text"><span class="ob-path-name">Unified API</span><span class="ob-path-line">One key. Memory, 17,000+ models, RAG, threads.</span></span>
+                <span class="ob-radio" aria-hidden="true"></span>
+              </button>
+            </div>
+            <p class="ob-fine">Not sure? <button type="button" class="ob-link" data-pick="api">Start with the Unified API</button>.</p>
+          </div>
+
+          <div class="ob-step" data-step="setup-studio" hidden>
+            <h1>Download Studio</h1>
+            <p class="ob-lede">Install it, open it, and sign in with the account you just made. Your models and memory are already there.</p>
+            <a class="ob-primary ob-dl" data-os-primary href="https://backboard-studio-releases.s3.ca-central-1.amazonaws.com/ide-releases/stable/latest/bbide/macos-aarch64/Backboard-Studio-aarch64.dmg">Download for macOS (Apple silicon)</a>
+            <ul class="ob-dls">
+              <li><a data-os="mac-arm" href="https://backboard-studio-releases.s3.ca-central-1.amazonaws.com/ide-releases/stable/latest/bbide/macos-aarch64/Backboard-Studio-aarch64.dmg">macOS, Apple silicon</a><span>.dmg</span></li>
+              <li><a data-os="mac-intel" href="https://backboard-studio-releases.s3.ca-central-1.amazonaws.com/ide-releases/stable/latest/bbide/macos-x86_64/Backboard-Studio-x86_64.dmg">macOS, Intel</a><span>.dmg</span></li>
+              <li><a data-os="win" href="https://apps.microsoft.com/detail/xpdndzmq142gbc">Windows</a><span>Microsoft Store</span></li>
+              <li><a data-os="linux" href="https://backboard-studio-releases.s3.ca-central-1.amazonaws.com/ide-releases/stable/latest/bbide/linux-x86_64/Backboard-Studio-linux-x86_64.deb">Linux</a><span>.deb</span></li>
+            </ul>
+            <p class="ob-fine">Prefer the browser for now? <a href="https://app.backboard.io">Open the dashboard</a>.</p>
+          </div>
+
+          <div class="ob-step" data-step="setup-rcli" hidden>
+            <h1>Install R-CLI</h1>
+            <p class="ob-lede">Paste this into your terminal, then sign in and open any project.</p>
+            <div class="ob-os" role="tablist" aria-label="Operating system">
+              <button type="button" role="tab" aria-selected="true" data-shell="unix">macOS and Linux</button>
+              <button type="button" role="tab" aria-selected="false" data-shell="win">Windows</button>
+            </div>
+            <div class="ob-cmd" data-cmd="unix"><code>curl -fsSL https://app.backboard.io/api/cli | bash</code><button type="button" class="ob-copy">Copy</button></div>
+            <div class="ob-cmd" data-cmd="win" hidden><code>irm https://app.backboard.io/api/cli/windows | iex</code><button type="button" class="ob-copy">Copy</button></div>
+            <p class="ob-label ob-then">Then</p>
+            <div class="ob-cmd"><code>backboard login</code><button type="button" class="ob-copy">Copy</button></div>
+            <div class="ob-cmd"><code>cd your-project &amp;&amp; backboard</code><button type="button" class="ob-copy">Copy</button></div>
+            <a class="ob-primary" href="https://app.backboard.io">Go to your dashboard</a>
+            <p class="ob-fine">The source is on <a href="https://github.com/Backboard-io/Backboard-R-CLI">GitHub</a>, MIT licensed.</p>
+          </div>
+
+          <div class="ob-step" data-step="setup-api" hidden>
+            <h1>Opening your dashboard</h1>
+            <p class="ob-lede">Create an API key under Settings, then send your first request. Taking you there now.</p>
+            <a class="ob-primary" href="https://app.backboard.io">Go to the dashboard</a>
+          </div>
+        </div>
+
+        <footer class="ob-foot">
+          <span>Backboard © 2026</span>
+          <a href="/backboard-v15-preview/contact/">Need help?</a>
+        </footer>
+      </section>
+    </div>
+  </body>
+</html>

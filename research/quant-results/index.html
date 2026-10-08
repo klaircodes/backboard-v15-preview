@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/backboard-v15-preview/favicon.svg" />
+    <meta name="description" content="More inference capacity per GPU, without giving up model quality" />
+    <title>More inference capacity per GPU, without giving up model quality | Backboard</title>
+    <script type="module" crossorigin src="/backboard-v15-preview/assets/main-B0GVSnf8.js"></script>
+    <link rel="stylesheet" crossorigin href="/backboard-v15-preview/assets/main-B_-6jsyQ.css">
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+    <header class="site-header">
+      <a class="mark" href="/backboard-v15-preview/"><img data-emblem alt="Backboard home" width="146" height="18" /></a>
+      <nav class="top-nav" aria-label="Primary">
+        <a href="/backboard-v15-preview/research/">Research</a>
+      </nav>
+      <div class="build">
+        <button class="build-btn" type="button" aria-expanded="false" aria-controls="build-menu">Build</button>
+        <div class="build-menu" id="build-menu" role="dialog" aria-modal="true" aria-label="Build with Backboard" hidden>
+          <div class="bm-inner">
+            <section class="bm-group" aria-labelledby="bm-start">
+              <h2 class="bm-label" id="bm-start">Start building</h2>
+              <ul>
+                <li style="--i: 0"><a href="/backboard-v15-preview/products/api/">
+                  <figure class="plate bm-thumb" data-src="/backboard-v15-preview/img/work-deploy.jpg" data-pos="0.5 0.5" data-contrast="1.5" data-level="0.02" data-positive><div class="plate-frame"></div></figure>
+                  <span class="bm-text"><span class="bm-name">Unified API <span class="out" aria-hidden="true">↗</span></span><span class="bm-line">One API for memory, models and tools.</span></span>
+                </a></li>
+                <li style="--i: 1"><a href="/backboard-v15-preview/products/studio/">
+                  <figure class="plate bm-thumb" data-src="/backboard-v15-preview/img/work-optimize.jpg" data-pos="0.55 0.35" data-contrast="1.5" data-level="0.02" data-positive><div class="plate-frame"></div></figure>
+                  <span class="bm-text"><span class="bm-name">Backboard Studio <span class="out" aria-hidden="true">↗</span></span><span class="bm-line">The desktop IDE, with everything built in.</span></span>
+                </a></li>
+                <li style="--i: 2"><a href="/backboard-v15-preview/products/r-cli/">
+                  <figure class="plate bm-thumb" data-src="/backboard-v15-preview/img/work-coding.jpg" data-pos="0.3 0.4" data-contrast="1.5" data-level="0.02" data-positive><div class="plate-frame"></div></figure>
+                  <span class="bm-text"><span class="bm-name">R-CLI <span class="out" aria-hidden="true">↗</span></span><span class="bm-line">Open-source coding harness for the terminal.</span></span>
+                </a></li>
+              </ul>
+            </section>
+            <section class="bm-group" aria-labelledby="bm-teams">
+              <h2 class="bm-label" id="bm-teams">For teams</h2>
+              <ul>
+                <li style="--i: 3"><div class="bm-held">
+                  <span class="bm-text"><span class="bm-name">Capsules</span><span class="bm-line">Your own model, deployed in your own cloud.</span></span>
+                </div></li>
+                <li style="--i: 4"><div class="bm-held">
+                  <span class="bm-text"><span class="bm-name">Inference engine</span><span class="bm-line">More answers from the same GPUs. Research preview.</span></span>
+                </div></li>
+              </ul>
+            </section>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <nav class="crumb" aria-label="Back"><a href="/backboard-v15-preview/research/" data-back>Research</a></nav>
+    <header class="article-head">
+      <p class="article-meta"></p>
+      <h1>More inference capacity per GPU, without giving up model quality</h1>
+      <p class="article-dek">BBQ-FP4 reduces model-weight memory by 3.2x to 3.8x while matching or exceeding full-precision average benchmark recovery.</p>
+    </header>
+    <main id="main">
+      <article class="content article">
+<ul>
+<li><strong>3.2x – 3.8x</strong><br>smaller model-weight footprint<br>16 GB vs 57 GB on Qwen3-30B-A3B<br>40 GB vs 152 GB on Qwen3-Next-80B-A3B</li>
+<li><strong>101.4% / 101.3%</strong><br>average recovery<br>Across the two Qwen MoE models<br>versus bf16 reference</li>
+<li><strong>up to 2.67x</strong><br>decode throughput<br>6,151 tok/s on Qwen3-30B-A3B<br>vs 2,304 tok/s in bf16</li>
+</ul>
+<h2>Benchmark evidence: BBQ vs. external 4-bit baseline</h2>
+<p>Both comparison models use approximately the same 4-bit footprint. Higher recovery and lower KLD indicate a closer match to bf16 behavior.</p>
+<table>
+<thead><tr><th>Metric</th><th>bf16</th><th>BBQ-FP4</th><th>External w4a16</th><th>BBQ edge</th></tr></thead>
+<tbody>
+<tr><th colspan="5">Qwen3-30B-A3B</th></tr>
+<tr><th>Avg. recovery</th><td>100.0%</td><td>101.4%</td><td>99.7%</td><td>+1.7 pts</td></tr>
+<tr><th>Worst-case recovery</th><td>100.0%</td><td>98.5%*</td><td>98.1%</td><td>+0.4 pts</td></tr>
+<tr><th>WikiText KLD</th><td>0</td><td>0.0345</td><td>0.0733</td><td>2.1x lower</td></tr>
+<tr><th>Weight memory</th><td>57 GB</td><td>16 GB</td><td>~16 GB</td><td>same footprint</td></tr>
+</tbody>
+<tbody>
+<tr><th colspan="5">Qwen3-Next-80B-A3B</th></tr>
+<tr><th>Avg. recovery</th><td>100.0%</td><td>101.3%</td><td>97.8%</td><td>+3.5 pts</td></tr>
+<tr><th>Worst-case recovery</th><td>100.0%</td><td>94.8%</td><td>93.1%</td><td>+1.7 pts</td></tr>
+<tr><th>WikiText KLD</th><td>0</td><td>0.0285</td><td>0.0329</td><td>13% lower</td></tr>
+<tr><th>Weight memory</th><td>152 GB</td><td>40 GB</td><td>~41 GB</td><td>~same footprint</td></tr>
+</tbody>
+</table>
+<h2>What this means for cloud providers</h2>
+<p>Increase deployable model capacity within existing GPU memory envelopes. The same compression class becomes a quality differentiator, not just a cost lever.</p>
+<h2>Where BBQ is strongest</h2>
+<p>Quality-sensitive MoE serving where benchmark regressions, distribution drift, and GPU memory ceilings matter as much as raw model compression.</p>
+<p>Methodology: Post-training FP4 quantization of Qwen3 MoE models. Recovery and memory savings are relative to bf16. External comparison values marked ~ are extrapolated, not directly benchmarked. Standard benchmarks are proxies and may not represent all production workloads.</p>
+<p>* Qwen3-30B-A3B worst-case recovery: BBQ-FP4-S; BBQ-FP4-L achieved 100.7%.</p>
+      </article>
+      <nav class="article-foot"><a class="link-chev" href="/backboard-v15-preview/research/">All research</a></nav>
+    </main>
+    <footer id="footer">
+      <div class="foot">
+        <div class="foot-brand">
+          <img data-emblem alt="Backboard" width="130" height="16" />
+          <span>Ottawa, Canada</span>
+        </div>
+        <nav class="foot-links" aria-label="Footer">
+          <a href="https://trust.backboard.io/">Trust Center</a>
+          <a href="/backboard-v15-preview/trust/">Security</a>
+          <a href="/backboard-v15-preview/privacy/">Privacy</a>
+          <a href="/backboard-v15-preview/terms/">Terms</a>
+          <a href="https://status.backboard.io/status/s">Status</a>
+          <a href="/backboard-v15-preview/careers/">Careers</a>
+          <a href="/backboard-v15-preview/contact/">Contact</a>
+          <a href="https://github.com/backboard-io">GitHub</a>
+          <a href="https://x.com/BackboardIO">X</a>
+          <a href="https://www.linkedin.com/company/backboard-io">LinkedIn</a>
+        </nav>
+      </div>
+    </footer>
+
+  </body>
+</html>

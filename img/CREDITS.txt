@@ -1,0 +1,1 @@
+work-deploy.jpg, gameplan-*.jpg, work-coding.jpg: from the coworker's Backboard site (new-backboard.vercel.app), as used on v12.

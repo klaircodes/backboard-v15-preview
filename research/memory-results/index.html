@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/backboard-v15-preview/favicon.svg" />
+    <meta name="description" content="The first AI platform to lead both major memory benchmarks" />
+    <title>The first AI platform to lead both major memory benchmarks | Backboard</title>
+    <script type="module" crossorigin src="/backboard-v15-preview/assets/main-B0GVSnf8.js"></script>
+    <link rel="stylesheet" crossorigin href="/backboard-v15-preview/assets/main-B_-6jsyQ.css">
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+    <header class="site-header">
+      <a class="mark" href="/backboard-v15-preview/"><img data-emblem alt="Backboard home" width="146" height="18" /></a>
+      <nav class="top-nav" aria-label="Primary">
+        <a href="/backboard-v15-preview/research/">Research</a>
+      </nav>
+      <div class="build">
+        <button class="build-btn" type="button" aria-expanded="false" aria-controls="build-menu">Build</button>
+        <div class="build-menu" id="build-menu" role="dialog" aria-modal="true" aria-label="Build with Backboard" hidden>
+          <div class="bm-inner">
+            <section class="bm-group" aria-labelledby="bm-start">
+              <h2 class="bm-label" id="bm-start">Start building</h2>
+              <ul>
+                <li style="--i: 0"><a href="/backboard-v15-preview/products/api/">
+                  <figure class="plate bm-thumb" data-src="/backboard-v15-preview/img/work-deploy.jpg" data-pos="0.5 0.5" data-contrast="1.5" data-level="0.02" data-positive><div class="plate-frame"></div></figure>
+                  <span class="bm-text"><span class="bm-name">Unified API <span class="out" aria-hidden="true">↗</span></span><span class="bm-line">One API for memory, models and tools.</span></span>
+                </a></li>
+                <li style="--i: 1"><a href="/backboard-v15-preview/products/studio/">
+                  <figure class="plate bm-thumb" data-src="/backboard-v15-preview/img/work-optimize.jpg" data-pos="0.55 0.35" data-contrast="1.5" data-level="0.02" data-positive><div class="plate-frame"></div></figure>
+                  <span class="bm-text"><span class="bm-name">Backboard Studio <span class="out" aria-hidden="true">↗</span></span><span class="bm-line">The desktop IDE, with everything built in.</span></span>
+                </a></li>
+                <li style="--i: 2"><a href="/backboard-v15-preview/products/r-cli/">
+                  <figure class="plate bm-thumb" data-src="/backboard-v15-preview/img/work-coding.jpg" data-pos="0.3 0.4" data-contrast="1.5" data-level="0.02" data-positive><div class="plate-frame"></div></figure>
+                  <span class="bm-text"><span class="bm-name">R-CLI <span class="out" aria-hidden="true">↗</span></span><span class="bm-line">Open-source coding harness for the terminal.</span></span>
+                </a></li>
+              </ul>
+            </section>
+            <section class="bm-group" aria-labelledby="bm-teams">
+              <h2 class="bm-label" id="bm-teams">For teams</h2>
+              <ul>
+                <li style="--i: 3"><div class="bm-held">
+                  <span class="bm-text"><span class="bm-name">Capsules</span><span class="bm-line">Your own model, deployed in your own cloud.</span></span>
+                </div></li>
+                <li style="--i: 4"><div class="bm-held">
+                  <span class="bm-text"><span class="bm-name">Inference engine</span><span class="bm-line">More answers from the same GPUs. Research preview.</span></span>
+                </div></li>
+              </ul>
+            </section>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <nav class="crumb" aria-label="Back"><a href="/backboard-v15-preview/research/" data-back>Research</a></nav>
+    <header class="article-head">
+      <p class="article-meta"></p>
+      <h1>The first AI platform to lead both major memory benchmarks</h1>
+      <p class="article-dek">93.4% on LongMemEval in an independent evaluation, and 90.0% on LoCoMo, ahead of every published memory system in every category. Both runs are public and reproducible.</p>
+    </header>
+    <main id="main">
+      <article class="content article">
+<ul>
+<li><strong>93.4%</strong><br>LongMemEval accuracy<br>467 of 500 questions correct<br>Independent evaluation by NewMathData</li>
+<li><strong>90.0%</strong><br>LoCoMo accuracy<br>Highest score in all four question categories<br>Human baseline ~88%, frontier models ~80%</li>
+<li><strong>+14.2 pts</strong><br>Ahead of the next-best system<br>Memobase 75.78%, Zep 75.14% on LoCoMo<br>Mem0, LangMem and OpenAI memory trail further</li>
+</ul>
+<h2>LongMemEval: 93.4% on the original academic specification</h2>
+<p>500 questions across six question types, each with roughly 40 to 50 sessions of history. Evaluated independently by NewMathData and scored by four separate LLM judges, which agree within about two points overall.</p>
+<figure>
+<table>
+<thead><tr><th>Category</th><th>Questions</th><th>Correct</th><th>GPT-4o-mini</th><th>GPT-4</th><th>Gemini 3 Pro</th><th>GPT-5.2</th></tr></thead>
+<tbody>
+<tr><td>Single-session (assistant)</td><td>56</td><td>55</td><td>98.2</td><td>96.4</td><td>96.4</td><td>96.4</td></tr>
+<tr><td>Single-session (user)</td><td>70</td><td>68</td><td>97.1</td><td>95.7</td><td>95.7</td><td>95.7</td></tr>
+<tr><td>Knowledge update</td><td>78</td><td>73</td><td>93.6</td><td>89.7</td><td>93.6</td><td>93.6</td></tr>
+<tr><td>Multi-session</td><td>133</td><td>122</td><td>91.7</td><td>94.0</td><td>92.5</td><td>89.5</td></tr>
+<tr><td>Temporal reasoning</td><td>133</td><td>122</td><td>91.7</td><td>93.2</td><td>92.5</td><td>92.5</td></tr>
+<tr><td>Single-session (preference)</td><td>30</td><td>27</td><td>90.0</td><td>80.0</td><td>80.0</td><td>66.7</td></tr>
+<tr><td>Overall</td><td>500</td><td>467</td><td>93.4</td><td>92.8</td><td>92.8</td><td>91.2</td></tr>
+</tbody>
+</table>
+<figcaption>Accuracy (%) on LongMemEval s_cleaned, 500 questions. GPT-4o-mini is the primary judge; GPT-4, Gemini 3 Pro and GPT-5.2 scored the same responses. Backboard ran on GPT-4.1, memory set to Auto for ingestion and Readonly for queries.</figcaption>
+</figure>
+<p><a href="https://github.com/Backboard-io/Backboard-longmemEval-results">Full LongMemEval run, reports and per-question outputs on GitHub →</a></p>
+<h2>LoCoMo: 90.0% overall, first in every category</h2>
+<p>Ten multi-session conversations ingested turn by turn into isolated assistants, then questioned across single-hop, multi-hop, open-domain and temporal reasoning. Backboard ran on Gemini 2.5 Pro; GPT-4.1 judged every answer.</p>
+<p><a href="https://github.com/Backboard-io/Backboard-Locomo-Benchmark">View the run and reproduce it on GitHub →</a></p>
+<figure>
+<table>
+<thead><tr><th></th><th>Method</th><th>Single-hop</th><th>Multi-hop</th><th>Open domain</th><th>Temporal</th><th>Overall</th></tr></thead>
+<tbody>
+<tr><td>1</td><td>Backboard</td><td>89.36</td><td>75.00</td><td>91.20</td><td>91.90</td><td>90.00</td></tr>
+<tr><td>2</td><td>Memobase (v0.0.37)</td><td>70.92</td><td>46.88</td><td>77.17</td><td>85.05</td><td>75.78<br>-14.2 pts</td></tr>
+<tr><td>3</td><td>Zep</td><td>74.11</td><td>66.04</td><td>67.71</td><td>79.79</td><td>75.14<br>-14.9 pts</td></tr>
+<tr><td>4</td><td>Memobase (v0.0.32)</td><td>63.83</td><td>52.08</td><td>71.82</td><td>80.37</td><td>70.91<br>-19.1 pts</td></tr>
+<tr><td>5</td><td>Mem0-Graph</td><td>65.71</td><td>47.19</td><td>75.71</td><td>58.13</td><td>68.44<br>-21.6 pts</td></tr>
+<tr><td>6</td><td>Mem0</td><td>67.13</td><td>51.15</td><td>72.93</td><td>55.51</td><td>66.88<br>-23.1 pts</td></tr>
+<tr><td>7</td><td>LangMem</td><td>62.23</td><td>47.92</td><td>71.12</td><td>23.43</td><td>58.10<br>-31.9 pts</td></tr>
+<tr><td>8</td><td>OpenAI</td><td>63.79</td><td>42.92</td><td>62.29</td><td>21.71</td><td>52.90<br>-37.1 pts</td></tr>
+</tbody>
+</table>
+<figcaption>Accuracy (%) on LoCoMo categories 1–4, adversarial questions excluded. GPT-4.1 judge at temperature 0.1. Points shown under each overall score are the gap to Backboard.</figcaption>
+</figure>
+<figure>
+<blockquote><p>Breaking the 90-percent threshold requires superhuman consistency in recall and reasoning. Most high-performing frontier models currently score around 80 percent on LoCoMo. The system built by Backboard.io is a far better attempt at simulating memory as it manifests in humans.</p></blockquote>
+<figcaption>Adyasha Maharana, creator of the LoCoMo benchmark and research scientist at Databricks, in the Ottawa Business Journal</figcaption>
+</figure>
+<p>Read the announcement →</p>
+<h2>What this means for agentic AI</h2>
+<p>Without reliable, shared memory, agents fragment, hallucinate, and reset. Backboard gives agents persistent, shared memory even when they run on different underlying models, so agentic behavior emerges naturally rather than being scripted.</p>
+<h2>Why leading both benchmarks matters</h2>
+<p>Most systems optimize for either short-horizon precision or long-horizon persistence, not both. Backboard's results reflect system-level behavior built on Active Temporal Resonance, which preserves meaning and continuity as interactions unfold, rather than benchmark-specific tuning.</p>
+<p><em>Methodology: LongMemEval was evaluated independently by NewMathData on the benchmark's original academic specification (s_cleaned, 500 questions) with Backboard on GPT-4.1. LoCoMo used the standard dataset with adversarial questions excluded, Backboard on Gemini 2.5 Pro and GPT-4.1 as judge; a 2 to 3 point variance between runs is expected. Both runs, including code and per-question outputs, are published on GitHub. Neither involved benchmark-specific tuning.</em></p>
+<p><em>* The LongMemEval score is a conservative lower bound: several responses that were more precise than the benchmark's expected answer were marked incorrect during evaluation.</em></p>
+      </article>
+      <nav class="article-foot"><a class="link-chev" href="/backboard-v15-preview/research/">All research</a></nav>
+    </main>
+    <footer id="footer">
+      <div class="foot">
+        <div class="foot-brand">
+          <img data-emblem alt="Backboard" width="130" height="16" />
+          <span>Ottawa, Canada</span>
+        </div>
+        <nav class="foot-links" aria-label="Footer">
+          <a href="https://trust.backboard.io/">Trust Center</a>
+          <a href="/backboard-v15-preview/trust/">Security</a>
+          <a href="/backboard-v15-preview/privacy/">Privacy</a>
+          <a href="/backboard-v15-preview/terms/">Terms</a>
+          <a href="https://status.backboard.io/status/s">Status</a>
+          <a href="/backboard-v15-preview/careers/">Careers</a>
+          <a href="/backboard-v15-preview/contact/">Contact</a>
+          <a href="https://github.com/backboard-io">GitHub</a>
+          <a href="https://x.com/BackboardIO">X</a>
+          <a href="https://www.linkedin.com/company/backboard-io">LinkedIn</a>
+        </nav>
+      </div>
+    </footer>
+
+  </body>
+</html>
